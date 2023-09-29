@@ -33,30 +33,29 @@ include __DIR__ . "/server.php"
       <div class="row">
         <!-- Loop foreach movie in list movies -->
         <?php foreach ($list_movies as $movie): ?>
-        <div class="col">
-          <div class="card">
-            <div class="card-header">
-            </div>
-            <div class="card-body">
-              <p>
-                <?= $movie->title ?>
-              </p>
-              <p>
-                <?= $movie->year ?>
-              </p>
-              <p>
-                <!-- Loop foreach genre in list Genres -->
+          <div class="col">
+            <div class="card">
+              <img src=<?= $movie->poster ?> alt="">
+              <div class="card-body">
+                <p>
+                  <?= $movie->title ?>
+                </p>
+                <p>
+                  <?= $movie->year ?>
+                </p>
+                <p>
+                  <!-- Loop foreach genre in list Genres -->
 
-                <span>
-                  <?= ($movie->genres->getAllGenres()) ?>
-                </span>
+                  <span>
+                    <?= ($movie->genres->getAllGenres()) ?>
+                  </span>
 
-              </p>
+                </p>
 
 
+              </div>
             </div>
           </div>
-        </div>
         <?php endforeach; ?>
 
       </div>
@@ -65,7 +64,7 @@ include __DIR__ . "/server.php"
   <!-- SCRIPT BOOTSTRAP JAVASCRIPT -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-  </script>
+    </script>
 </body>
 
 </html>

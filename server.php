@@ -16,6 +16,8 @@ foreach ($Movies as $film) {
     $film["title"],
     new Genre($film["genres"]),
     $film["year"],
+    $film["poster"],
+
   );
   // Add item in list movies
   $list_movies[] = $movie_item;
