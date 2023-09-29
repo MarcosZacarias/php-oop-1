@@ -1,25 +1,29 @@
 <?php
+// Class Movie
 include __DIR__ . "/Models/Movie.php";
+// Class Genre
 include __DIR__ . "/Models/Genre.php";
+// Data base movies
 include __DIR__ . "/data/db.php";
 
-// var_dump($Movies);
+// List movies with ogject
+$list_movies = [];
 
-$movie_1 = new Movie(
-  $Movies[0]["title"],
-  $Movies[0]["genre"],
-  $Movies[0]["year"],
-);
+// Loop add movie item in list movies
+foreach ($Movies as $film) {
+  // Class movie
+  $movie_item = new Movie(
+    $film["title"],
+    new Genre($film["genres"]),
+    $film["year"],
+  );
+  // Add item in list movies
+  $list_movies[] = $movie_item;
+}
+;
 
-$movie_2 = new Movie(
-  $Movies[1]["title"],
-  $Movies[1]["genre"],
-  $Movies[1]["year"],
-);
-
-var_dump($movie_1);
-var_dump($movie_2)
+// var_dump($list_movies[0]->title);
 
 
 
-  ?>
+?>

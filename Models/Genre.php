@@ -2,14 +2,25 @@
 
 class Genre
 {
-  public $type;
+  public $genres;
 
 
   public function __construct(
-    $_type,
+    $_genres,
   ) {
-    $this->type = $_type;
+    $this->genres = $_genres;
 
+  }
+
+  public function getAllGenres()
+  {
+    $string_genres = "";
+    foreach ($this->genres as $genre) {
+      $string_genres .= $genre . "; ";
+    }
+    ;
+
+    return $string_genres;
   }
 
 }
