@@ -1,6 +1,5 @@
 <?php
 include __DIR__ . "/server.php";
-
 ?>
 
 
@@ -37,19 +36,7 @@ include __DIR__ . "/server.php";
             <div class="card">
               <img src=<?= $production->poster ?> alt="">
               <div class="card-body">
-                <p>
-                  <?= $production->title ?>
-                </p>
-                <p>
-                  <!-- Loop foreach genre in list Genres -->
-
-                  <span>
-                    <?= $production->get_all_genres() ?>
-                  </span>
-
-                </p>
-
-
+                <?= $production->getDetails() ?>
               </div>
             </div>
           </div>
