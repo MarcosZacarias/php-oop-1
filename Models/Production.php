@@ -26,16 +26,18 @@ class Production
   public function getDetails()
   {
     return "
-      <p>
-        $this->title
-</p>
-<p>
-  <!-- Loop foreach genre in list Genres -->
-  <span>
-    {$this->get_all_genres()}
-  </span>
-</p>
-";
+    <p>
+      <strong>Titolo: </strong>
+      $this->title
+    </p>
+    <p>
+      <!-- Loop foreach genre in list Genres -->
+      <span>
+        <strong>Generi: </strong>
+        {$this->get_all_genres()}
+      </span>
+    </p>";
+
 
   }
 
