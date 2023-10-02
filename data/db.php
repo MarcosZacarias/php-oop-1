@@ -59,17 +59,17 @@ $tvseries_data = [
     "aired_to_year" => "in produzione",
     "number_of_episodes" => 18,
     "number_of_seasons" => 2,
-    "poster" => "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9531676CAD1BDA30FD35DFE0A280FCBFFD48D62CB79428389EC127336B9F2DB1/scale?width=1200&aspectRatio=1.78&format=jpeg"
+    "poster" => "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/579DCE830F3216C9D0E8CF19364D75BDA911A0C1D3392DA4BCB6D47EF3D01BCE/scale?width=506&aspectRatio=2.00&format=jpeg"
 
   ],
   [
     "title" => "Peaky Blinders",
-    "genres" => ["storico", "gangster", "drammatico", "in costume", "noir"],
+    "genres" => ["Storico", "Gangster", "Drammatico", "In Costume", "Noir"],
     "aired_from_year" => 2013,
     "aired_to_year" => 2022,
     "number_of_episodes" => 36,
     "number_of_seasons" => 6,
-    "poster" => "hhttps://m.media-amazon.com/images/M/MV5BZjYzZDgzMmYtYjY5Zi00YTk1LThhMDYtNjFlNzM4MTZhYzgyXkEyXkFqcGdeQXVyMTE5NDQ1MzQ3._V1_.jpg"
+    "poster" => "https://m.media-amazon.com/images/M/MV5BZjYzZDgzMmYtYjY5Zi00YTk1LThhMDYtNjFlNzM4MTZhYzgyXkEyXkFqcGdeQXVyMTE5NDQ1MzQ3._V1_.jpg"
 
   ],
 
