@@ -9,7 +9,7 @@ class Production
   public function __construct(
     $_title,
     $_genres,
-    $_poster
+    $_poster,
   ) {
     $this->title = $_title;
     $this->genres = $_genres;
