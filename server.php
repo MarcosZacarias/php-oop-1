@@ -1,44 +1,44 @@
 <?php
-// Class Movie
-include __DIR__ . "/Models/Movie.php";
+// Class Production
+include __DIR__ . "/Models/Production.php";
 // Class Genre
 include __DIR__ . "/Models/Genre.php";
-// Data base movies
+// Data base Productions
 include __DIR__ . "/data/db.php";
 
-// List movies with ogject
-$list_movies = [];
+// List Productions with ogject
+$list_productions = [];
 
-// Loop add movie item in list movies
-foreach ($movies_data as $film_data) {
+
+// Loop add Production item in list Productions
+foreach ($productions_data as $production_data) {
 
 
 
   $genres = [];
 
-  foreach ($film_data["genres"] as $genre_data) {
+  foreach ($production_data["genres"] as $genre_data) {
     $genres[] = new Genre($genre_data);
 
   }
 
-  // Class movie
-  $movie_item = new Movie(
-    $film_data["title"],
+  // Class Production
+  $production_item = new Production(
+    $production_data["title"],
     $genres,
-    $film_data["year"],
-    $film_data["poster"],
+    $production_data["poster"]
 
   );
-  // Add item in list movies
-  $list_movies[] = $movie_item;
+  // Add item in list Productions
+  $list_productions[] = $production_item;
 
 
 }
 ;
 
-// foreach ($list_movies as $movie) {
+// foreach ($list_productions as $product) {
 
-//   var_dump($movie->get_all_genres());
+//   var_dump($product);
 //   echo "<hr>";
 // }
 

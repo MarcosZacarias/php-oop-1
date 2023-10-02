@@ -2,28 +2,13 @@
 
 class Movie
 {
-  public $title;
-  public $genres;
-  public $year;
-  public $poster;
-
+  public $published_year;
+  public $running_time;
   public function __construct(
-    $_title,
-    $_genres,
-    $_year,
-    $_poster
+    $_published_year,
+    $_running_time,
   ) {
-    $this->title = $_title;
-    $this->genres = $_genres;
-    $this->year = $_year;
-    $this->poster = $_poster;
+    $this->published_year = $_published_year;
+    $this->running_time = $_running_time;
   }
-
-  public function get_all_genres()
-  {
-    $genres_name = array_map(fn($genre_text) => $genre_text->name, $this->genres);
-    return implode(" - ", $genres_name);
-
-  }
-
 }
