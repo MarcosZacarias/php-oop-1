@@ -29,10 +29,10 @@ include __DIR__ . "/server.php";
   <!-- DIV VUE.JS -->
   <div id="app">
     <div class="container p-2">
-      <div class="row">
+      <div class="row g-3">
         <!-- Loop foreach movie in list movies -->
         <?php foreach ($list_productions as $production): ?>
-          <div class="col">
+          <div class="col-3">
             <div class="card">
               <img src=<?= $production->poster ?> alt="">
               <div class="card-body">
