@@ -1,5 +1,5 @@
 <?php
-$productions_data = [
+$movies_data = [
   [
     "title" => "Indiana Jones e i predatori dell'arca perduta",
     "genres" => ["Azione", "Avventura"],
@@ -34,6 +34,9 @@ $productions_data = [
     "poster" => "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRx7OdWeoL_KV9ACpHksuD4I67KzgJTGV9LJLt2vnFK5drBJPG0"
 
   ],
+];
+
+$tvseries_data = [
   [
     "title" => "Ahsoka ",
     "genres" => ["Fantascienza", "Azione", "Avventura", "Drammatico"],
