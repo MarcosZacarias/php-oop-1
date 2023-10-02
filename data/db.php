@@ -1,5 +1,5 @@
 <?php
-$Movies = [
+$movies_data = [
   [
     "title" => "Indiana Jones e i predatori dell'arca perduta",
     "genres" => ["Azione", "Avventura"],

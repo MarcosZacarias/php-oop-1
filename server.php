@@ -10,21 +10,37 @@ include __DIR__ . "/data/db.php";
 $list_movies = [];
 
 // Loop add movie item in list movies
-foreach ($Movies as $film) {
+foreach ($movies_data as $film_data) {
+
+
+
+  $genres = [];
+
+  foreach ($film_data["genres"] as $genre_data) {
+    $genres[] = new Genre($genre_data);
+
+  }
+
   // Class movie
   $movie_item = new Movie(
-    $film["title"],
-    new Genre($film["genres"]),
-    $film["year"],
-    $film["poster"],
+    $film_data["title"],
+    $genres,
+    $film_data["year"],
+    $film_data["poster"],
 
   );
   // Add item in list movies
   $list_movies[] = $movie_item;
+
+
 }
 ;
 
-// var_dump($list_movies[0]->title);
+// foreach ($list_movies as $movie) {
+
+//   var_dump($movie->get_all_genres());
+//   echo "<hr>";
+// }
 
 
 
