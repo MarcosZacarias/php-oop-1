@@ -1,7 +1,10 @@
 <?php
 
+include __DIR__ . "/FinaleSeason.php";
+
 class TvSerie extends Production
 {
+  use FinaleSeason;
   public $aired_from_year;
   public $aired_to_year;
   public $number_of_episodes;
@@ -25,6 +28,9 @@ class TvSerie extends Production
   }
   public function getDetails()
   {
+    $finaleSeasonYear = $this->aired_to_year;
+
+
     return "
     <p>
       <strong>Titolo: </strong>
@@ -38,12 +44,8 @@ class TvSerie extends Production
       </span>
     </p>
     <p>
-      <strong>Emessa dall'anno: </strong>
-      $this->aired_from_year
-    </p>
-    <p>
-      <strong>Fino all'anno: </strong>
-      $this->aired_to_year
+      <strong>Anno: </strong>
+      $this->aired_from_year - {$this->printFinaleSeason($finaleSeasonYear)}
     </p>
     <p>
       <strong>Numeri di episodi: </strong>

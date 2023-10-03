@@ -49,14 +49,15 @@ $tvseries_data = [
     "aired_to_year" => 2023,
     "number_of_episodes" => 8,
     "number_of_seasons" => 1,
-    "poster" => "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0EJBVCDxFu1ExCWJWOgCjhcF54Jxf20N_dtTVHuoorDRn2xyi"
+    "poster" => "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0EJBVCDxFu1ExCWJWOgCjhcF54Jxf20N_dtTVHuoorDRn2xyi",
+
 
   ],
   [
     "title" => "The Bear",
     "genres" => ["Commedia", "Drammatica"],
     "aired_from_year" => 2022,
-    "aired_to_year" => "in produzione",
+    "aired_to_year" => "",
     "number_of_episodes" => 18,
     "number_of_seasons" => 2,
     "poster" => "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/579DCE830F3216C9D0E8CF19364D75BDA911A0C1D3392DA4BCB6D47EF3D01BCE/scale?width=506&aspectRatio=2.00&format=jpeg"
