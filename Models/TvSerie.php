@@ -32,29 +32,33 @@ class TvSerie extends Production
 
 
     return "
-    <p>
-      <strong>Titolo: </strong>
-      $this->title
-    </p>
-    <p>
-      <!-- Loop foreach genre in list Genres -->
-      <span>
-        <strong>Generi: </strong>
-        {$this->get_all_genres()}
-      </span>
-    </p>
-    <p>
-      <strong>Anno: </strong>
-      $this->aired_from_year - {$this->printFinaleSeason($finaleSeasonYear)}
-    </p>
-    <p>
-      <strong>Numeri di episodi: </strong>
-      $this->number_of_episodes
-    </p>
-    <p>
-      <strong>Numeri di stagioni: </strong>
-      $this->number_of_seasons
-    </p>";
+    <img src=$this->poster alt=>
+    <div class=card-body>
+      <p>
+        <strong>Titolo: </strong>
+        $this->title
+      </p>
+      <p>
+        <!-- Loop foreach genre in list Genres -->
+        <span>
+          <strong>Generi: </strong>
+          {$this->get_all_genres()}
+        </span>
+      </p>
+      <p>
+        <strong>Anno: </strong>
+        $this->aired_from_year - {$this->printFinaleSeason($finaleSeasonYear)}
+      </p>
+      <p>
+        <strong>Numeri di episodi: </strong>
+        $this->number_of_episodes
+      </p>
+      <p>
+        <strong>Numeri di stagioni: </strong>
+        $this->number_of_seasons
+      </p>
+    </div>
+    ";
 
   }
 }

@@ -32,14 +32,13 @@ include __DIR__ . "/server.php";
       <div class="row g-3">
         <!-- Loop foreach movie in list movies -->
         <?php foreach ($list_productions as $production): ?>
-          <div class="col-3">
-            <div class="card">
-              <img src=<?= $production->poster ?> alt="">
-              <div class="card-body">
-                <?= $production->getDetails() ?>
-              </div>
-            </div>
+        <div class="col-3">
+          <div class="card">
+
+            <?= $production->getDetails() ?>
+
           </div>
+        </div>
         <?php endforeach; ?>
 
       </div>
@@ -48,7 +47,7 @@ include __DIR__ . "/server.php";
   <!-- SCRIPT BOOTSTRAP JAVASCRIPT -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-    </script>
+  </script>
 </body>
 
 </html>
